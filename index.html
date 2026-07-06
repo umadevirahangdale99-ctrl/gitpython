@@ -1,14 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uma | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,.2);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero span{
+    color:yellow;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+    max-width:700px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#2575fc;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:yellow;
+    color:black;
+    transform:scale(1.05);
+}
+
+section{
+    padding:80px 10%;
+    background:white;
+    color:#333;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2575fc;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:40px;
+}
+nav{
+display:none;
+}
+}
+</style>
+
 </head>
 <body>
 
-    <h1>This is  Testing</h1>
-   <img src="https://images.unsplash.com/photo-1631631480669-535cc43f2327?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww" alt="Testing Image">
-    
+<header>
+<div class="logo">Uma</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<div class="hero">
+
+<h1>Hello, I'm <span>Uma</span></h1>
+
+<p>
+A passionate Python Developer, Frontend Developer, Data Analyst, and Django Learner.
+I love building beautiful websites and AI-powered applications.
+</p>
+
+<a href="#about" class="btn">Explore</a>
+
+</div>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>👩 About</h3>
+<p>
+Hi! I'm Uma, a Computer Science student passionate about programming,
+web development, Python, and Artificial Intelligence.
+</p>
+</div>
+
+<div class="card">
+<h3>🎯 Goal</h3>
+<p>
+To become a Full Stack Python Developer and Data Analyst while exploring
+Machine Learning and Cloud Computing.
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Projects</h3>
+<p>
+Expense Tracker, Student Management System, Online Exam System,
+AI Expense Dashboard, and Portfolio Website.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Frontend</h3>
+<p>HTML, CSS, JavaScript, Bootstrap</p>
+</div>
+
+<div class="card">
+<h3>Programming</h3>
+<p>Python, C, C++</p>
+</div>
+
+<div class="card">
+<h3>Backend</h3>
+<p>Django, SQLite, MySQL</p>
+</div>
+
+<div class="card">
+<h3>Other</h3>
+<p>Data Analysis, Git, GitHub, Machine Learning Basics</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Email</h3>
+<p>yourmail@example.com</p>
+</div>
+
+<div class="card">
+<h3>LinkedIn</h3>
+<p>linkedin.com/in/yourprofile</p>
+</div>
+
+<div class="card">
+<h3>GitHub</h3>
+<p>github.com/yourusername</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>© 2026 Uma | Designed with ❤️ using HTML & CSS</h3>
+
+</footer>
+
 </body>
 </html>
